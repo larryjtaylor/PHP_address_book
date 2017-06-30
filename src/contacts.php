@@ -1,5 +1,5 @@
 <?php
-    class Jobs
+    class Contacts
     {
 
         private $name;
