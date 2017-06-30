@@ -1,0 +1,77 @@
+.jumbotron {
+  background-image: url('/../img/addressBook.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 38px;
+  text-align: center;
+  border-bottom: 2px solid red;
+}
+
+body {
+    background-image: url('/../img/writing.gif');
+}
+.well {
+  width: 40%;
+  display: block;
+  margin: auto;
+  border: 2px solid red;
+}
+
+#telBook {
+    width: 30%;
+    display: inline;
+}
+
+#address {
+    padding-left: 10%;
+    display: inline;
+    color: blue;
+}
+
+#book {
+    display: inline;
+    padding-right: 10%;
+    color: blue;
+}
+
+#rolodex {
+    width: 30%;
+    display: inline;
+}
+
+#input {
+  margin-bottom: 10%;
+}
+
+.field {
+    padding-left: 10%;
+}
+
+#addContact {
+  display: block;
+  margin: auto;
+}
+
+#displayHeader {
+    font-size: 24px;
+    text-align: center;
+}
+
+#contactName {
+    padding-left: 25%;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+    padding-left: 25%;
+}
+
+#lastList {
+    margin-bottom: 15%;
+}
+
+#clear {
+    display: block;
+    margin: auto;
+}
