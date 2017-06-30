@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('/../img/writing.gif');
+    background-image: linear-gradient( rgba(0, 0, 0, .40), rgba(0, 0, 0, .40) ), url('/../img/writing.gif');
 }
 
 .well {
@@ -49,10 +49,16 @@ body {
     padding-left: 10%;
 }
 
-.button {
+#newContact {
+    width: 150px;
     display: block;
     margin: auto;
-    text-align: center;
+}
+
+#clear {
+    width: 150px;
+    display: block;
+    margin: auto;
 }
 
 .display {
@@ -77,4 +83,50 @@ li {
 
 #lastList {
     margin-bottom: 15%;
+}
+
+#viewAll {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+#clearPar {
+    font-size: 30px;
+    text-align: center;
+}
+
+#deleteWell{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.pic {
+    width: 95%;
+}
+
+#blockbuster {
+    display: block;
+    margin: auto;
+    padding-left: 5%;
+}
+
+#iphone {
+    display: block;
+    margin: auto;
+    padding-left: 5%;
+}
+
+#politics {
+    display: block;
+    margin: auto;
+    width: 30%;
+    margin-top: 5%;
+}
+
+#homeButton {
+    width: 150px;
+    display: block;
+    margin: auto;
 }
