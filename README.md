@@ -1,4 +1,4 @@
-#Address Book
+# Address Book
 
 ##### _Collection of contact information, June 30, 2017_
 
@@ -26,7 +26,7 @@ In your browser, type 'localhost:8000' in the address bar to run the program.
 * Upon submitting on viewing page, the program will redirect back to the home page.
 * Upon return to the home page, the user's inputted info will be displayed below the input fields.
 * If the user submits the delete button, the program will be redirected to a delete page where the user will be informed their contacts have been deleted.
-* Upon clicking the home button on the delete page, the program will redirect back to the home page. 
+* Upon clicking the home button on the delete page, the program will redirect back to the home page.
 
 
 ## Technologies Used
