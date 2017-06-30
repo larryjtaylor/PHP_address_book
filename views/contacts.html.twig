@@ -29,17 +29,17 @@
                 <label for='location' class='field'>City, State, Zip</label>
                 <input id='location' name='location' type='text'><br><br>
 
-                <button type='submit' id='addContact'>Add Contact</button>
+                <button type='submit' class='button'>Add Contact</button>
             </form>
         </div>
         <div class='well'>
             <div class='display'>
                 {% if contacts is not empty %}
-                <p id='displayHeader'>Here are all your contacts:</p>
-                <ul>
+                <p class='displayHeader'>Here are all your contacts:</p>
                     {% for contact in contacts %}
-                    <p id='contactName'>{{ contact.getName }}</p>
-                    <li>{{ contact.getPhone }}</li>
+                <p class='contactName'>{{ contact.getName }}</p>
+                <ul>
+                    <li >{{ contact.getPhone }}</li>
                     <li>{{ contact.getStreet }}</li>
                     <li id="lastList">{{ contact.getLocation }}</li>
                     {% endfor %}
@@ -48,7 +48,7 @@
             </div>
 
         <form action='/delete_contacts' method='post'>
-            <button type='submit' id='clear'>Clear</button>
+            <button type='submit' class='button'>Clear</button>
         </form>
     </div>
 </body>
