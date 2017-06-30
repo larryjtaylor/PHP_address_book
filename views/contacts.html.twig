@@ -17,11 +17,29 @@
                 <input id='phone' name='phone' type='text'><br><br>
                 <label for='street'>Street Address</label>
                 <input id='street' name='street' type='text'><br><br>
-                <label for='location'>Give a brief description of your duties:</label>
+                <label for='location'>City, State, Zip</label>
                 <input id='location' name='location' type='text'><br><br>
 
                 <button type='submit'>Add Contact</button>
             </form>
         </div>
+        <div class="well">
+
+            {% if contacts is not empty %}
+            <p>Here are all your contacts:</p>
+            <ul>
+                {% for contact in contacts %}
+                <p id='contactName'>{{ contact.getName }}</p>
+                <li>{{ contact.getPhone }}</li>
+                <li>{{ contact.getStreet }}</li>
+                <li>{{ contact.getLocation }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+        <form action='/clear' method='post'>
+            <button type='submit'>Clear</button>
+        </form>
+    </div>
 </body>
 </html>
