@@ -1,7 +1,6 @@
 <?php
-    class Contacts
+    class Contact
     {
-
         private $name;
         private $phone;
         private $street;

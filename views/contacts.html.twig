@@ -10,7 +10,7 @@
     </div>
     <div class="container">
         <div class="well">
-            <form action='/contacts' method='post'>
+            <form action='/create_contact' method='post'>
                 <label for='name'>Contact name:</label>
                 <input id='name' name='name' type='text'><br><br>
                 <label for='phone'>Phone Number</label>
@@ -37,7 +37,7 @@
             </ul>
             {% endif %}
 
-        <form action='/clear' method='post'>
+        <form action='/delete_contacts' method='post'>
             <button type='submit'>Clear</button>
         </form>
     </div>

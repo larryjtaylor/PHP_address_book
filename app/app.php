@@ -16,18 +16,18 @@
     ));
 
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('contacts.html.twig', array('contacts' => Contacts::getAll()));
+        return $app['twig']->render('contacts.html.twig', array('contacts' => Contact::getAll()));
     });
 
-    $app->post("/contacts", function() use ($app) {
-        $contacts = new Contacts($_POST['name'], $_POST['phone'], $_POST['street'], $_POST['location']);
+    $app->post("/create_contact", function() use ($app) {
+        $contacts = new Contact($_POST['name'], $_POST['phone'], $_POST['street'], $_POST['location']);
         $contacts->save();
-        return $app['twig']->render('view_contacts.html.twig', array('contacts' => $contacts));
+        return $app['twig']->render('create_contacts.html.twig', array('newContacts' => $contacts));
     });
 
-    $app->post("/clear", function() use ($app) {
-        Contacts::deleteAll();
-        return $app['twig']->render('clear_contacts.html.twig');
+    $app->post("/delete_contacts", function() use ($app) {
+        Contact::deleteAll();
+        return $app['twig']->render('delete_contacts.html.twig');
     });
 
     return $app;
