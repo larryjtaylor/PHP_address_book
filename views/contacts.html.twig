@@ -1,0 +1,28 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="/../css/styles.css" type="text/css">
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 id='header'>Address Book</h1>
+    </div>
+    <div class="container">
+        <div class="well">
+            <form action='/contacts' method='post'>
+                <label for='name'>Contact name:</label>
+                <input id='name' name='name' type='text'><br><br>
+                <label for='phone'>Phone Number</label>
+                <input id='phone' name='phone' type='text'><br><br>
+                <label for='street'>Street Address</label>
+                <input id='street' name='street' type='text'><br><br>
+                <label for='location'>Give a brief description of your duties:</label>
+                <input id='location' name='location' type='text'><br><br>
+
+                <button type='submit'>Add Contact</button>
+            </form>
+        </div>
+        
+</body>
+</html>
