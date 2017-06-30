@@ -79,7 +79,7 @@ ul {
 
 li {
     list-style: none;
-    }
+}
 
 #lastList {
     margin-bottom: 15%;
@@ -96,7 +96,7 @@ li {
     text-align: center;
 }
 
-#deleteWell{
+#deleteWell {
     display: block;
     margin: auto;
     width: 100%;
