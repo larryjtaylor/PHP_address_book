@@ -10,11 +10,17 @@ This web application allows users to input information about contacts and have t
 
 ## Setup
 
-Find this github repo at github.com/larryjtaylor/PHP_address_book. In local terminal, type command "git clone [paste URL here]."
-Go to www.getcomposer.org and follow the instructions to download, if you have not already done so.
-In your terminal, type the command '$ composer install' to install all relevant dependencies.
-In your terminal, navigate into the web folder and type the command 'php -S localhost:8000'.
-In your browser, type 'localhost:8000' in the address bar to run the program.
+* Open GitHub site on your browser: https://github.com/Larryjtaylor/PHP_address_book
+* Select the dropdown (green box) "Clone or download"
+* Copy the link for the GitHub repository
+* Open Terminal on your computer
+* In Terminal, perform the following steps:
+    * type 'cd desktop' and press enter
+    * type 'git clone' then copy the repository link and press enter
+    * type 'cd php-ping-pong' to access the document root (project folder) on your computer
+    * type 'composer install' to download dependencies (Silex & Twig)
+    * type 'cd web' to access web folder, then type 'php -S localhost:8000' to open local server
+* Open browser and type 'localhost:8000' to view address book.
 
 ## Specifications
 * The program will accept inputted information from the input form on the homepage.
